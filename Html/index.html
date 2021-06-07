@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddressBook</title>
+    <link rel="stylesheet" href="../Css/design.css">
+    <script defer src="../JavaScript/AddressBookService.js"></script>
+    <script defer  src="../JavaScript/AddressBook.js"></script>
+    <script src="../JavaScript/site_properties.js"></script>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png" alt="Logo">
+            <div>
+                <span class="emp-text">ADDRESS</span><br>
+                <span class="emp-text emp-payroll">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    
+    <div id="formId" class="form-content">
+    
+        <form id="empForm" class="form" action="#" onreset="resetForm()" onsubmit="save(event)">
+            <div class="form1"> PERSON ADDRESS FORM
+                <span class="cancel-img" >
+                   <a href="../Html/Home.html"><img  src="../assets/cancel.jpg"
+                            alt="Cancel Icon"></a>
+                
+                </span>
+
+            </div>
+           
+            <div class="row-content">
+           
+                <input class="input" type="text" name="name" id="name" placeholder="Enter name" required>
+                <error-output class="text-error" for="name"></error-output>
+            </div>
+
+            <div class="row-content">
+                
+                <textarea class="input" id="address" name="address" placeholder="Address" style="height: 100px;"></textarea>
+            </div>
+
+            <div class="row-content">
+                
+                <div >
+                    <select id="city" name="city" >
+                    <option disabled selected>Select City</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Pune">Pune</option>
+                   </select>
+                </div>
+                        <div class="selection">
+                    <select id="state" name="state">
+                        <option disabled selected>Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgadh">Chhattisgadh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="J&K">Jammu & Kashmir</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        </select>
+                        </div>
+
+                        <div class="selection">
+                            <input class="input" type="text" id="zip" name="zip" placeholder="Enter Zip Code..." required>
+
+                        </div>
+
+                </div>
+              
+           
+
+
+            <div class="row-content">
+           
+                <input class="input" type="text" name="phno" id="phno" placeholder="Phone Number" required>
+                <error-output class="text-error" for="phno"></error-output>
+            </div>
+            
+
+
+            
+            <div class="buttonParent">
+                <div class="submit-reset" >
+                    <button type="submit" class="button submitButton" id="submitButton">Add</button>
+                    <button type="reset" class="resetButton button" id="resetButton" >Reset</button>
+                </div>
+            </div>
+           
+    </form>
+    </div>
+</body>
+</html>

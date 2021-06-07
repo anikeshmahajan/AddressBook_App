@@ -1,0 +1,96 @@
+.header{
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid white;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    width: 80%;
+}
+.logo-content-img {
+    border: solid 0px #42515f;
+    padding-right: 8px;
+    width: 53px;
+}
+.contact-text{
+    font: normal normal bold 22px/25px Montserrat;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 0px;
+    color: #008CFF;
+    text-transform: capitalize;
+}
+.add-book {color: #42515f;}
+*{box-sizing: border-box;}
+
+body{
+    background-color: #F7F7F7;
+}
+.table-header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    color: #42515F;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+.add-button{
+    font: normal normal normal 20px/24px Roboto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 2px 5px;
+    padding-right: 10px;
+    background-color: #008cff;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration:none;
+}
+.table-main{
+    display: flex;
+    justify-content: center;
+}
+.table-display{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    min-width: 200px;
+    padding: 0 9%;
+}
+td,th{
+    text-align: left;
+    padding: 15px 8px;
+    opacity: 1;
+    letter-spacing: 0px;
+}
+tr{
+    background-color: white;
+}
+th{
+    font: normal normal bold 18px/22px Lato;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #658292;
+    text-transform: capitalize;
+    border: 0px solid #dddddd;
+    padding-left: 40px;
+    padding-bottom: 0;
+}
+td{
+    padding: 15px 40px;
+    color: #3D3D3D;
+    font: normal normal 600 14px/16px Lato;
+    cursor: pointer;
+}

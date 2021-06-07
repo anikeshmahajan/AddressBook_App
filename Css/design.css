@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    border: 0px solid green;
+}
+
+.logo-content-img {
+    border: 0px solid #42515f;
+}
+
+.emp-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+
+.emp-payroll {
+    color: #42515f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    align-items: center;
+    border: 0px solid royalblue;
+    min-height: calc(100%-80px);
+}
+
+    .form1
+    {
+        display: flex;
+        font: normal normal bold 20px/25px Montserrat;
+        justify-content: center;
+        border-radius: 8px 8px 0px 0px;
+        padding: 20px;
+        color: white;  
+        
+        background: #008CFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+.form {
+    width: 80%;
+    padding: 44px 60px;
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid royalblue(240, 235, 235);
+    border-radius: 8px;
+    opacity: 1;
+}
+.cancel-img { 
+    display: flex;
+   margin-left: 10%;
+    opacity: 1;
+    
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid #a5a89a;
+}
+
+.label {
+    min-width: 140px;
+}
+
+
+
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #becbd6;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+select{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font: normal normal normal 12px Roboto;
+    letter-spacing: 0px;
+    background-color: white;
+    width: 180px;
+    height: 38px;;
+    opacity: 1;
+    
+}
+.selection{
+    display: flex;
+    padding: 25px;
+
+    font: normal normal normal 12px Roboto;
+    background-color: transparent;
+
+}
+error-output {
+    font-size:12px;
+    font-style:italic;
+    color:red;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    background-color:#E2E2E2;
+    opacity: 1;
+    border: none;
+    font-weight: 40%;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid grey;
+    cursor: pointer;
+    
+}
+
+.submitButton {
+    border: none;
+    border: 1px solid grey;
+    margin-right: 30px;
+}
+.submitButton:hover{
+   background-color: #707070;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+}
+.cancelButton:hover{
+    Background-color: #82A70C;
+}
+@media only screen and (max-width: 960px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+    .form {
+        width: 90%;
+        padding: 44px 20px;
+    }
+    .profile-radio-content {
+        flex-flow: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .form {
+        margin-top: 10px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .uploadButton {
+        justify-content: flex-start;
+    }
+    .profile-radio-content {
+        flex-flow: wrap;
+    }
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton {
+        margin: 0;
+    }
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
