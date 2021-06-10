@@ -2,43 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book App</title>
+    <link rel="stylesheet" href="../Css/HomePage.css">
+</head>
 
-        <link rel="stylesheet" href="../Css/HomePage.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-        
-        <title>Address Book Home</title>
-    </head>
-    <body>
-        <header class="header-content header">
-            <div class="logo-content">
-                <img src="../Assets/images/ICON.PNG" alt="Logo" style="
-                width: 58px; padding-right: 8px;">
-                <div>
-                    <span class="contact-text">ADDRESS</span><br>
-                    <span class="contact-text add-book">BOOK</span>
-                </div>
-            </div>
-        </header>
-        <div class="table-header">
-            <div style="font: normal normal bold 28px/25px Roboto;">Person Details</div>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img class="image" src="../Assets/icons/create-black-18dp.svg" alt="logo" width="50" height="55">
             <div>
-                <a class="add-button" href="../Html/index.html">
-                    <img alt="Add Contact" src="../Assets/icons/add-24px.svg">
-                    Add Person
-                </a>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="add-text add-book">BOOK</span>
             </div>
         </div>
+    </header>
 
+
+    <div class="main-content">
+        <div class="header-content">
+            <span class="header-data" >
+                Person Details
+            </span>
+            <span>
+                <a class="header-add" href="../Html/index.html">
+                  <img src="../Assets/icons/add-24px.svg" height="35px" >Add Person</a>
+            </span>
+        </div>
         <div class="table-main">
-            <table class="table-display" id="table">
-    
+            <table id="table-display" class="table">
             </table>
         </div>
-        <script src="../JavaScript/home.js "></script>
-        <script src="../JavaScript/site_properties.js"></script>
-        <script src="../JavaScript/AddressBookService.js"></script>
-    </body>
-   
+    </div>
+    <script src="../JavaScript/AddressBook.js"></script>
+   <script src="../JavaScript/home.js"></script>
+   <script src="../JavaScript/site_properties.js"></script>
+   <script src="../JavaScript/utility.js"></script>
+   <script src="../JavaScript/AddressBookDBService.js"></script>
+</body>
 </html>
